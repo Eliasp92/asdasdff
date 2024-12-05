@@ -1,3 +1,11 @@
+function changeBackgroundcolor() {
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
+    let color = "#" + randomColor;
+    document.body.style.backgroundColor = color;
+  }
+  
+  window.addEventListener("load", changeBackgroundcolor());
+
 function generateEmail() {
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
