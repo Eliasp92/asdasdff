@@ -7,19 +7,28 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
+    color: black;
+    line-height: 1.6;
 }
 
 header {
-    background-color: white;
+    background-color: green;
+    color: white;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
+
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .grid-item {
@@ -28,6 +37,11 @@ header {
     text-align: center;
     border: 1px solid gray;
     box-shadow: 2px 2px 5px black
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .grid-item img {
